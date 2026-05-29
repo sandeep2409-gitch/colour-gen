@@ -1,10 +1,10 @@
-# 🎨 ChromaGen — Professional Color Palette Generator
+# ChromaGen — Professional Color Palette Generator
 
 ChromaGen is a commercial-grade, responsive React web application designed to help developers and UI/UX designers generate harmonious color schemes, verify WCAG accessibility targets, preview palettes on live login interfaces, and export them into production-ready formats instantly.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 * **Harmonious Palette System**: Beyond simple random hex lists, generate mathematically cohesive palettes using standard color wheel distributions:
   * **Analogous**: Cohesive neighboring colors (spaced by 30° on the wheel).
@@ -14,10 +14,10 @@ ChromaGen is a commercial-grade, responsive React web application designed to he
   * **Triadic & Tetradic**: Equidistant wheels (120° and 60°/180° distributions).
   * **Completely Random**: Free-form search space.
 * **Tone Restrictions (Filter Presets)**: Lock down the generator to specific color spaces:
-  * 🌸 **Pastel Tones** (high lightness, gentle saturation)
-  * ⚡ **Bright / Neon** (max saturation, medium-high lightness)
-  * 🌌 **Deep / Dark** (low lightness, medium saturation)
-  * 🪵 **Vintage / Muted** (low saturation, medium-low lightness)
+  *  **Pastel Tones** (high lightness, gentle saturation)
+  *  **Bright / Neon** (max saturation, medium-high lightness)
+  *  **Deep / Dark** (low lightness, medium saturation)
+  *  **Vintage / Muted** (low saturation, medium-low lightness)
 * **Accessibility / WCAG 2.1 Contrast Checker**: Select any background and text color combination in the active palette to calculate the relative luminance ratio and verify if they pass or fail WCAG AA/AAA standards for normal and large typography.
 * **Live Login Page Mockup Previews**: Preview color schemes dynamically in three realistic interactive layouts:
   1. **Minimalist Style**: email and password input cards, custom checkbox markers, primary entry paths.
@@ -49,7 +49,7 @@ ChromaGen is a commercial-grade, responsive React web application designed to he
 
 ---
 
-## 🧠 Core Implementation details
+##  Core Implementation details
 
 1. **Precision HSL Conversions**: Working with RGB values is useful for canvas rendering, but HSL (Hue, Saturation, Lightness) is the optimal space for color relationships. Writing custom roundtrip algorithms (HEX ⇄ RGB ⇄ HSL) made it easy to enforce mathematical harmony configurations.
 2. **WCAG Relative Luminance**: Implemented the standardized W3C relative luminance formulas. Applying non-linear sRGB gamma correction to calculate exact contrast ratios is critical for constructing robust accessibility audits.
@@ -57,7 +57,7 @@ ChromaGen is a commercial-grade, responsive React web application designed to he
 
 ---
 
-## 📥 How to Run Locally
+## How to Run Locally
 
 ### 1. Clone the project and navigate to the folder
 ```bash
